@@ -19,6 +19,9 @@ A fully trained model (convergence shown below) is [available for download][5].
 Note that the model in [my other VQA repo](https://github.com/Cyanogenoid/vqa-counting) performs better than the model implemented here.
 
 
+# This project uses the code provided [here][6]
+
+
 ## Running the model
 
 - Clone this repository with:
@@ -60,3 +63,4 @@ python view-log.py <path to .pth log>
 [3]: https://github.com/ruotianluo/pytorch-resnet
 [4]: http://visualqa.org/vqa_v1_download.html
 [5]: https://github.com/Cyanogenoid/pytorch-vqa/releases
+[6]: https://github.com/Cyanogenoid/pytorch-vqa
