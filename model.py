@@ -41,7 +41,7 @@ class Net(nn.Module):
 
         for m in self.modules():
             if isinstance(m, nn.Linear) or isinstance(m, nn.Conv2d):
-                init.xavier_uniform(m.weight)
+                init.kaiming_uniform(m.weight,nonlinearity='relu')
                 if m.bias is not None:
                     m.bias.data.zero_()
 
