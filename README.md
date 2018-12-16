@@ -3,9 +3,6 @@
 This is a re-implementation of Vahid Kazemi and Ali Elqursh's paper [Show, Ask, Attend, and Answer: A Strong Baseline For Visual Question Answering][0] in [PyTorch][1].
 
 
-# This project uses the code provided [here][6]
-
-
 ## Running the model
 
 - Clone this repository with:
@@ -30,6 +27,10 @@ The logs contain the name of the model, training statistics, contents of `config
 ```
 python view-log.py <path to .pth log>
 ```
+
+# This project uses the code provided [here][6]
+
+We used the preprocessing and base code provided by the above link and then performed an extensive architecture and hyperparameter search.
 
 
 ## Python 3 dependencies (tested on Python 3.6.2)
