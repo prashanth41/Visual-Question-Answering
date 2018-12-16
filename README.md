@@ -2,22 +2,6 @@
 
 This is a re-implementation of Vahid Kazemi and Ali Elqursh's paper [Show, Ask, Attend, and Answer: A Strong Baseline For Visual Question Answering][0] in [PyTorch][1].
 
-The paper shows that with a relatively simple model, using only common building blocks in Deep Learning, you can get better accuracies than the majority of previously published work on the popular [VQA v1][2] dataset.
-
-This repository is intended to provide a straightforward implementation of the paper for other researchers to build on.
-The results closely match the reported results, as the majority of details should be exactly the same as the paper. (Thanks to the authors for answering my questions about some details!)
-This implementation seems to consistently converge to about 0.1% better results –
-there are two main implementation differences:
-
-- Instead of setting a limit on the maximum number of words per question and cutting off all words beyond this limit, this code uses per-example dynamic unrolling of the language model.
-- [An issue with the official evaluation code](https://github.com/Cyanogenoid/pytorch-vqa/issues/5) makes some questions unanswerable. This code does not normalize machine-given answers, which avoids this problem. As the vast majority of questions are not affected by this issue, it's very unlikely that this will have any significant impact on accuracy.
-
-A fully trained model (convergence shown below) is [available for download][5].
-
-![Graph of convergence of implementation versus paper results](http://i.imgur.com/moWYEm8.png)
-
-Note that the model in [my other VQA repo](https://github.com/Cyanogenoid/vqa-counting) performs better than the model implemented here.
-
 
 # This project uses the code provided [here][6]
 
